@@ -1,8 +1,14 @@
 aid: tantan
 name: Tantan
-description: 'Tantan is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Tantan (探探) is a Chinese location-based social discovery and online
+  dating application, launched in 2014 and widely described as "China''s Tinder"
+  for its swipe-based matching mechanic. The app pairs nearby users who mutually
+  express interest and layers on messaging, moments, live streaming, and interest-based
+  social features. An early DCM Ventures portfolio company, Tantan was acquired by
+  Momo Inc. (now Hello Group) in 2018 and operates as a consumer mobile product across
+  China and several international markets. Tantan is a mobile-first consumer app and
+  publishes no public developer API, SDK, or developer portal; this profile captures
+  its public web identity and probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/tantan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,29 @@ x-backed-by:
 - dcm-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://tantanapp.com/intl2/static/media/logo.ico
 tags:
 - Company
 - Consumer
+- Dating
+- Social
+- Mobile
+- Social Networking
+- Online Dating
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tantan-domain-security.yml
 - type: Website
   url: https://tantanapp.com/en
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
